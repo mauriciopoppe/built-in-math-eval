@@ -41,7 +41,7 @@ describe('interval arithmetic evaluator', function () {
       exp = compile('mul(2, 3)');
       assert.equal(exp.eval(), 6);
       exp = compile('div(2, 3)');
-      assert.equal(exp.eval(), 2/3);
+      assert.equal(exp.eval(), 2 / 3);
       exp = compile('pow(2, 3)');
       assert.equal(exp.eval(), 8);
       exp = compile('mod(2, 3)');
