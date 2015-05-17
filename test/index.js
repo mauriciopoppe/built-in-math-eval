@@ -128,6 +128,7 @@ describe('interval arithmetic evaluator', function () {
       assert.equal(compile('2 | 1').eval(), 3);
       assert.equal(compile('2 & 1').eval(), 0);
       assert.equal(compile('2 & 1').eval(), 0);
+      assert.equal(compile('PI').eval(), Math.PI);
     });
 
     it('should compute the square root of a number', function () {
