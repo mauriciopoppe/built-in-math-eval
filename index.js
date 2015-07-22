@@ -5,6 +5,6 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
+'use strict'
 
-module.exports = require('./lib/eval');
+module.exports = require('./lib/eval')
