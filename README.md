@@ -76,10 +76,10 @@ compile('x^3').eval({ x: 2 })
 // > 1
 compile('cos(x)').eval({ x: 0 })
 
-// > 1
-compile('cos(x)').eval({ x: 0 })
+// > 8
+compile('2x^2').eval({ x: 2 })
 
-// > PI
+// > 3.1415
 compile('PI').eval()
 ```
 

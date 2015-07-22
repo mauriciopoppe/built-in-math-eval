@@ -162,6 +162,9 @@ describe('interval arithmetic evaluator', function () {
 
       exp = compile('sin(exp(x))')
       assert.equal(exp.eval({ x: 1 }), 0.41078129050290885)
+
+      exp = compile('2x^2')
+      assert.equal(exp.eval({ x: 2 }), 8)
     })
   })
 
