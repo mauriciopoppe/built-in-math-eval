@@ -19,7 +19,7 @@
     "built-in-math-eval"
   ],
   "dependencies": {
-    "math-codegen": "^0.3.3"
+    "math-codegen": "^0.3.4"
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
