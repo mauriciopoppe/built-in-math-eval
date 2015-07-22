@@ -1,8 +1,11 @@
 # built-in-math-eval 
 
+[![Build Status][travis-image]][travis-url] 
 [![NPM][npm-image]][npm-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+[![Stability](https://img.shields.io/badge/stability-unstable-yellow.svg)]()
 
-[![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url]  [![Dependency Status][david-image]][david-url]
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 > Evaluate mathematical expression with the built-in math object
 
@@ -73,17 +76,18 @@ compile('x^3').eval({ x: 2 })
 // > 1
 compile('cos(x)').eval({ x: 0 })
 
+// > 1
+compile('cos(x)').eval({ x: 0 })
+
 // > PI
 compile('PI').eval()
 ```
 
 2015 © Mauricio Poppe
 
-[npm-image]: https://nodei.co/npm/built-in-math-eval.png?downloads=true
+[npm-image]: https://img.shields.io/npm/v/built-in-math-eval.svg?style=flat
 [npm-url]: https://npmjs.org/package/built-in-math-eval
 [travis-image]: https://travis-ci.org/maurizzzio/built-in-math-eval.svg?branch=master
 [travis-url]: https://travis-ci.org/maurizzzio/built-in-math-eval
 [coveralls-image]: https://coveralls.io/repos/maurizzzio/built-in-math-eval/badge.svg
 [coveralls-url]: https://coveralls.io/r/maurizzzio/built-in-math-eval
-[david-image]: https://david-dm.org/maurizzzio/built-in-math-eval.svg
-[david-url]: https://david-dm.org/maurizzzio/built-in-math-eval

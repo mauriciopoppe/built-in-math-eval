@@ -1,6 +1,6 @@
 {
   "name": "built-in-math-eval",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "Evaluate mathematical expression with the built-in math object",
   "bugs": "https://github.com/maurizzzio/built-in-math-eval/issues",
   "license": "MIT",
