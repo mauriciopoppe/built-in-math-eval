@@ -165,6 +165,12 @@ describe('interval arithmetic evaluator', function () {
 
       exp = compile('2x^2')
       assert.equal(exp.eval({ x: 2 }), 8)
+
+      exp = compile('2^3^4')
+      // 2^81
+      // (2^40)^2 * 2
+      // ((2^20)^2)^2 * 2
+      assert.equal(exp.eval(), ((1 << 20) * (1 << 20)) * (1 << 20) * (1 << 20) * 2)
     })
   })
 
