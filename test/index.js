@@ -122,6 +122,9 @@ describe('interval arithmetic evaluator', function () {
       exp = compile('abs(-1)')
       assert.equal(exp.eval(), 1)
 
+      exp = compile('nthRoot(-8, 3)')
+      assert.equal(exp.eval(), -2)
+
       assert.equal(compile('1 < 2').eval(), true)
       assert.equal(compile('1 <= 2').eval(), true)
       assert.equal(compile('2 > 2').eval(), false)
