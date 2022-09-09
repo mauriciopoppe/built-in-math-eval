@@ -1,12 +1,8 @@
-'use strict'
+/* eslint-env jest */
 
-var mocha = require('mocha')
-var it = mocha.it
-var describe = mocha.describe
-
-var assert = require('assert')
-var compile = require('../')
-var exp
+const assert = require('assert')
+const compile = require('../')
+let exp
 
 function cleanAssert (a, b) {
   assert(a && a.code)
@@ -55,13 +51,13 @@ describe('interval arithmetic evaluator', function () {
     it('should compile scope stored variables', function () {
       exp = compile('x')
 
-      var scope
-      scope = {x: 1}
+      let scope
+      scope = { x: 1 }
       assert.equal(exp.eval(scope), 1)
       assert.equal(scope.x, 1)
 
       assert.throws(function () {
-        scope = {x: [-1, 2]}
+        scope = { x: [-1, 2] }
         assert.equal(exp.eval(scope), [-1, 2])
         assert.equal(scope.x, [-1, 2])
       })
@@ -155,7 +151,7 @@ describe('interval arithmetic evaluator', function () {
       assert(Math.abs(exp.eval() - 2) < 1e-7)
 
       exp = compile('sqrt(x)^2')
-      assert(Math.abs(exp.eval({x: 2}) - 2) < 1e-7)
+      assert(Math.abs(exp.eval({ x: 2 }) - 2) < 1e-7)
 
       exp = compile('1 / x')
       assert.equal(exp.eval({ x: 0 }), Infinity)
@@ -179,7 +175,7 @@ describe('interval arithmetic evaluator', function () {
 
   describe('assignment', function () {
     it('should update a property of the scope', function () {
-      var scope = {x: 1}
+      const scope = { x: 1 }
       compile('y = x').eval(scope)
       assert.equal(scope.x, scope.y)
     })
@@ -187,9 +183,9 @@ describe('interval arithmetic evaluator', function () {
 
   describe('block', function () {
     it('should update a property of the scope', function () {
-      var scope = {x: 1}
-      var exp = compile('y = 1 + x; y + 1')
-      var res = exp.eval(scope)
+      const scope = { x: 1 }
+      const exp = compile('y = 1 + x; y + 1')
+      const res = exp.eval(scope)
       assert.equal(res, 3)
       assert.equal(scope.x, 1)
       assert.equal(scope.y, 2)
@@ -198,13 +194,13 @@ describe('interval arithmetic evaluator', function () {
 
   describe('conditional', function () {
     it('should work with the ternary operator', function () {
-      var res, exp, scope
-      scope = {x: 1}
+      let res, exp, scope
+      scope = { x: 1 }
       exp = compile('x < 2 ? 1 : 2')
       res = exp.eval(scope)
       assert.equal(res, 1)
 
-      scope = {x: 1}
+      scope = { x: 1 }
       exp = compile('x > 2 ? 1 : 2')
       res = exp.eval(scope)
       assert.equal(res, 2)

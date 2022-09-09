@@ -24,7 +24,7 @@
 
 ## Description
 
-This module evaluates the generated code from [math-codegen](https://github.com/maurizzzio/math-codegen)
+This module evaluates the generated code from [math-codegen](https://github.com/mauriciopoppe/math-codegen)
 for the built in `Math` namespace providing the necessary adapter methods
 
 ## Installation
@@ -59,7 +59,7 @@ all variables are casted to `Number`
 
 ## Examples
 
-Also have a look at [test/index.js](https://github.com/maurizzzio/built-in-math-eval/blob/master/test/index.js)
+Also have a look at [test/index.js](https://github.com/mauriciopoppe/built-in-math-eval/blob/master/test/index.js)
 
 ```javascript
 var compile = require('built-in-math-eval');
@@ -87,7 +87,7 @@ compile('PI').eval()
 
 [npm-image]: https://img.shields.io/npm/v/built-in-math-eval.svg?style=flat
 [npm-url]: https://npmjs.org/package/built-in-math-eval
-[travis-image]: https://travis-ci.org/maurizzzio/built-in-math-eval.svg?branch=master
-[travis-url]: https://travis-ci.org/maurizzzio/built-in-math-eval
-[coveralls-image]: https://coveralls.io/repos/maurizzzio/built-in-math-eval/badge.svg
-[coveralls-url]: https://coveralls.io/r/maurizzzio/built-in-math-eval
+[travis-image]: https://travis-ci.org/mauriciopoppe/built-in-math-eval.svg?branch=master
+[travis-url]: https://travis-ci.org/mauriciopoppe/built-in-math-eval
+[coveralls-image]: https://coveralls.io/repos/mauriciopoppe/built-in-math-eval/badge.svg
+[coveralls-url]: https://coveralls.io/r/mauriciopoppe/built-in-math-eval
