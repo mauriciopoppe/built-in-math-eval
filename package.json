@@ -5,10 +5,11 @@
   "bugs": "https://github.com/mauriciopoppe/built-in-math-eval/issues",
   "license": "MIT",
   "main": "index.js",
-  "author": "Mauricio Poppe",
+  "author": "Mauricio Poppe (https://mauriciopoppe.com)",
   "files": [
     "index.js",
     "lib",
+    "package-lock.json",
     "LICENSE"
   ],
   "repository": {

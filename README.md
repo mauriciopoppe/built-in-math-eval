@@ -3,7 +3,6 @@
 [![Build Status][travis-image]][travis-url] 
 [![NPM][npm-image]][npm-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
-[![Stability](https://img.shields.io/badge/stability-unstable-yellow.svg)]()
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
