@@ -20,7 +20,7 @@
     "built-in-math-eval"
   ],
   "dependencies": {
-    "math-codegen": "^0.4.1"
+    "math-codegen": "^0.4.3"
   },
   "devDependencies": {
     "doctoc": "^2.2.0",
